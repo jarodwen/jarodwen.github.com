@@ -3,11 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>JArod's Bits</title>
+	<title>A Worst Case for Quicksort - JArod's Bits</title>
 	<meta name="author" content="JArod Wen">
 
 	
-	<meta name="description" content="Just got some tries on Trello. It has been a very useful tool used in Stack-overflow to monitor the on-the-fly status of all developers, remotely. &hellip;">
+	<meta name="description" content="It is well-known that quicksort is the best-practice sorting algorithm with the average lg(n) complexity. But, it may reach the worst case using O(n2 &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -91,62 +91,9 @@
 </script>
 
 	
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/04/10/git-repository-as-a-backend-of-knowledge-management/">
-		
-			Git Repository as a Backend of Knowledge Management</a>
-	</h2>
-	<div class="entry-content">
-		<p>Just got some tries on <a href="http://trello.com" title="Trello">Trello</a>. It has been a very useful tool used in Stack-overflow to monitor the on-the-fly status of all developers, <strong>remotely</strong>. It is very handy to support GitHub push and pull requests (but unfortunately, no BitBucket yet).</p>
-
-<p>The basic concepts of trello include <strong>list</strong> and <strong>card</strong>. A list is a collection of cards with some common properties, while each card can be used to track a topic. Inside of a card there is activity (as comments), and different actions (checklist, due date, move, vote, archive, etc). This structure is simple, and very close to what I am searching for as a logging and knowledge management tool: quick log, structured management, and quick search. However I just noticed that the search feature of trello is not very powerful: it cannot reach deep into the card activities.</p>
-
-<p>And this experience makes me re-think my idea about the quick logging tool. Seems that git could be a very good backend for storing and managing the logs. There are missing pieces, like the fulltext searching support (and structured search)&#8230;</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-10T22:36:00-07:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time></div>
-	<div class="tags">
-
-
-	<a class='category' href='/blog/categories/thoughts/'>thoughts</a>
-
-
-</div>
-	
-</div></article>
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2013/02/08/a-worst-case-for-quicksort/">
-		
-			A Worst Case for Quicksort</a>
-	</h2>
-	<div class="entry-content">
-		<p>It is well-known that quicksort is the best-practice sorting algorithm with the average lg(n) complexity. But, it may reach the worst case using O(n<sup>2</sup> ). Here is the question: what is the worst case?</p>
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">A Worst Case for Quicksort</h2>
+	<div class="entry-content"><p>It is well-known that quicksort is the best-practice sorting algorithm with the average lg(n) complexity. But, it may reach the worst case using O(n<sup>2</sup> ). Here is the question: what is the worst case?</p>
 
 <p>Before further discussion, the quicksort algorithm should be specified first. There are so many quicksort implementations with different optimization strategies. But for this post, I will only focus on the <strong>three-way-partition quicksort</strong>. A full description of this algorithm can be found from Dr. Donald&#8217;s book, and (in my opinion) an easier version of the instruction can be found from his student Robert Sedgewick (a google search for &#8220;Quicksort is optimal&#8221;).</p>
 
@@ -192,10 +139,7 @@
 
 
 <p>I think you see the point now; the pivots are chosen as 2, 4, 6, 8, &#8230;, so each round of the quicksort will only have 2 numbers done. So totally for this dataset we need 10 levels. Each level we need to scan the whole number list. Then we get a O(n<sup>2</sup> )~</p>
-
-		
-		
-	</div>
+</div>
 
 
 <div class="meta">
@@ -222,49 +166,26 @@
 	
 </div></article>
 
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2012/12/19/bit-0/">
-		
-			Bit 0</a>
-	</h2>
-	<div class="entry-content">
-		<p>I should admit that I love trying new things. I can count all my old blogs using more than 2 bits, and now there is another one. The problem is that more blogs means less motivation to update any of them. But I do not want to throw away any of them, as any post is a small piece of the past.</p>
-
-<p>Again, <a href="http://octopress.org">Octopress</a> seems to be a very handy tool for blogging. More geeky features can be customized with little efforts. It would be interesting to probe it for a while. Sounds attractive to me&#8230; So let me try again :).</p>
-
-		
-		
-	</div>
-
-
-<div class="meta">
-	<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-19T06:09:00-08:00" pubdate data-updated="true">Dec 19<span>th</span>, 2012</time></div>
-	<div class="tags">
-
-</div>
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
 	
-</div></article>
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2013
 
     JArod Wen
@@ -283,7 +204,10 @@
       var disqus_shortname = 'jarodsbits';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jarodwen.github.com/blog/2013/02/08/a-worst-case-for-quicksort/';
+        var disqus_url = 'http://jarodwen.github.com/blog/2013/02/08/a-worst-case-for-quicksort/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: thoughts | JArod's Bits]]></title>
+  <link href="http://jarodwen.github.com/blog/categories/thoughts/atom.xml" rel="self"/>
+  <link href="http://jarodwen.github.com/"/>
+  <updated>2013-04-10T23:01:17-07:00</updated>
+  <id>http://jarodwen.github.com/</id>
+  <author>
+    <name><![CDATA[JArod Wen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git Repository as a Backend of Knowledge Management]]></title>
+    <link href="http://jarodwen.github.com/blog/2013/04/10/git-repository-as-a-backend-of-knowledge-management/"/>
+    <updated>2013-04-10T22:36:00-07:00</updated>
+    <id>http://jarodwen.github.com/blog/2013/04/10/git-repository-as-a-backend-of-knowledge-management</id>
+    <content type="html"><![CDATA[<p>Just got some tries on <a href="http://trello.com" title="Trello">Trello</a>. It has been a very useful tool used in Stack-overflow to monitor the on-the-fly status of all developers, <strong>remotely</strong>. It is very handy to support GitHub push and pull requests (but unfortunately, no BitBucket yet).</p>
+
+<p>The basic concepts of trello include <strong>list</strong> and <strong>card</strong>. A list is a collection of cards with some common properties, while each card can be used to track a topic. Inside of a card there is activity (as comments), and different actions (checklist, due date, move, vote, archive, etc). This structure is simple, and very close to what I am searching for as a logging and knowledge management tool: quick log, structured management, and quick search. However I just noticed that the search feature of trello is not very powerful: it cannot reach deep into the card activities.</p>
+
+<p>And this experience makes me re-think my idea about the quick logging tool. Seems that git could be a very good backend for storing and managing the logs. There are missing pieces, like the fulltext searching support (and structured search)...</p>
+]]></content>
+  </entry>
+  
+</feed>
